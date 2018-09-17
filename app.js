@@ -38,4 +38,15 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+var mysql = require("mysql");
+//Database connection
+var conmysql =  mysql.createConnection({
+  host: 'localhost',
+  user: 'soyrosar_notasad',
+  password: 'admin',
+  database: 'soyrosar_notas'
+ 
+  });
+
 module.exports = app;
