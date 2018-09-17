@@ -1,12 +1,12 @@
 var mysql = require('mysql')
 
-var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'your_user',
-  password: 'some_secret',
-  database: 'the_app_database'
-})
-
+var conmysql =  mysql.createConnection({
+    host: 'localhost',
+    user: 'soyrosar_notasad',
+    password: 'admin',
+    database: 'soyrosar_notas'
+   
+    });
 connection.connect(function(err) {
   if (err) throw err
   console.log('You are now connected...')
